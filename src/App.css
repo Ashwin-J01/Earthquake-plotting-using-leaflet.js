@@ -1,0 +1,191 @@
+/* ==== RESET & BASE ==== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f3f4f6;
+  color: #1f2937;
+  line-height: 1.5;
+}
+
+/* ==== HEADER ==== */
+header {
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+  color: white;
+  text-align: center;
+  padding: 1.2rem;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  border-bottom: 3px solid rgba(255,255,255,0.2);
+}
+
+/* ==== GRID LAYOUT ==== */
+#grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  height: calc(100vh - 80px);
+  gap: 0;
+}
+
+/* ==== MAP CARD ==== */
+.map-card {
+  padding: 0.75rem;
+  background: white;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ==== MAP ==== */
+.leaflet-map {
+  width: 100%;
+  height: 100%;
+  min-height: 500px;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.1);
+}
+
+.leaflet-control {
+  border-radius: 8px !important;
+  overflow: hidden;
+}
+
+.custom-marker {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.leaflet-popup-content {
+  font-size: 0.9rem;
+}
+
+.leaflet-popup-content strong {
+  font-size: 1rem;
+  color: #1e3a8a;
+}
+/* ==== SIDEBAR ==== */
+aside#charts {
+  padding: 1.5rem;
+  overflow-y: auto;
+  background: #f9fafb;
+  border-left: 1px solid #e5e7eb;
+}
+
+/* ==== CARD STYLE ==== */
+.card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0,0,0,0.05);
+}
+
+.card:hover {
+  box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+  transform: translateY(-4px);
+}
+
+/* ==== FILTERS ==== */
+#filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(145deg, #ffffff, #f3f4f6);
+  padding: 0.85rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  box-shadow: inset 1px 1px 3px rgba(0,0,0,0.05);
+}
+
+label {
+  font-weight: 600;
+  margin-bottom: 0.35rem;
+  color: #374151;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+  background-color: white;
+  font-size: 0.95rem;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59,130,246,0.3);
+  outline: none;
+}
+
+/* ==== LEGEND CARD ==== */
+#legend {
+  background: linear-gradient(145deg, #f9fafb, #f1f5f9);
+  padding: 0.75rem;
+  border-radius: 8px;
+  border: 1px solid #e2e8f0;
+  font-size: 0.9rem;
+}
+
+/* ==== CHART CONTAINERS ==== */
+.chart-container {
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(145deg, #ffffff, #f8fafc);
+  box-shadow: 0 4px 14px rgba(0,0,0,0.05);
+  border: 1px solid #e2e8f0;
+  transition: transform 0.2s ease;
+}
+
+.chart-container:hover {
+  transform: translateY(-3px);
+}
+
+/* ==== LOADER & ERRORS ==== */
+.loader {
+  text-align: center;
+  padding: 1rem 0;
+  color: #2563eb;
+  font-weight: 500;
+}
+
+.error-box {
+  background-color: #fee2e2;
+  border-left: 4px solid #dc2626;
+  padding: 0.75rem 1rem;
+  border-radius: 6px;
+  margin-bottom: 1rem;
+  color: #b91c1c;
+  font-weight: 500;
+}
+
+/* ==== RESPONSIVE ==== */
+@media (max-width: 768px) {
+  #grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto;
+  }
+
+  aside#charts {
+    border-left: none;
+    border-top: 1px solid #e5e7eb;
+    height: auto;
+  }
+}

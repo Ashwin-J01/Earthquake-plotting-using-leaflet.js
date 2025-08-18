@@ -1,0 +1,80 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": { "name": "USGS Menlo Park, USA" },
+      "geometry": { "type": "Point", "coordinates": [-122.173, 37.453] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Geoscience Australia, Canberra" },
+      "geometry": { "type": "Point", "coordinates": [149.124, -35.277] }
+    },
+    {
+      "type": "Feature",
+      "properties": { "name": "Tokyo Seismic Center, Japan" },
+      "geometry": { "type": "Point", "coordinates": [139.767, 35.681] }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "USGS Albuquerque Seismological Laboratory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-106.4431, 35.0844]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Caltech Seismological Laboratory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-118.1253, 34.1377]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Tokyo University Earthquake Research Institute"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.7595, 35.7126]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Geoscience Australia Seismic Observatory"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [149.1300, -35.2809]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "British Geological Survey Seismic Monitoring"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [-1.1372, 52.9548]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Institute of Earth Sciences, Academia Sinica, Taiwan"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.6147, 25.0400]
+      }
+    }
+  ]
+}
